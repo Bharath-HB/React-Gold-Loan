@@ -1,38 +1,113 @@
+/* General App styling */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background: linear-gradient(to right, #f0f4f8, #dce1e8); /* Soft gradient background */
+  padding: 40px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+  background-color: #0056b3; /* Deep blue header */
+  padding: 20px 0; /* Ample padding */
   color: white;
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 40px; /* Increased margin */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.App-link {
-  color: #61dafb;
+/* Header text styling */
+h1 {
+  margin: 0;
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bolder text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Slider container styling */
+.slider-container {
+  margin: 0 auto;
+  max-width: 600px; /* Wider container */
+  padding: 30px;
+  border: 2px solid #0056b3; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  background: #ffffff; /* White background for contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+/* Slider styling */
+.slider {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0; /* Light track color */
+  border-radius: 6px; /* Rounded track */
+  outline: none;
+  margin: 20px 0;
+  transition: background 0.3s;
+}
+
+.slider:hover {
+  background: #c0c0c0; /* Darker track on hover */
+}
+
+/* Slider thumb styling */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #0056b3; /* Thumb color */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #003d79; /* Darker thumb border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for thumb */
+}
+
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #0056b3;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #003d79;
+}
+
+.slider::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  background: #0056b3;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #003d79;
+}
+
+/* Slider label styling */
+.slider-label {
+  font-size: 20px; /* Larger font size */
+  color: #333; /* Darker text color */
+  margin-bottom: 20px; /* Increased margin */
+}
+
+/* Button styling */
+button {
+  background-color: #0056b3; /* Matching button color */
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Larger padding */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003d79; /* Darker blue on hover */
+}
+
+/* Secondary heading styling */
+h2 {
+  margin-top: 30px; /* Increased margin */
+  color: #333; /* Dark text color */
+  font-size: 1.8rem; /* Larger font size */
 }
